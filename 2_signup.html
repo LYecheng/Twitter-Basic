@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Twitter Basic Plus</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+<section id="top" class="header">
+
+    <div class="col-lg-12 text-center">
+        <h2>Sign Up</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <form name="sentMessage" id="contactForm" method=get action="4_signup.php" novalidate>
+
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>User ID</label>
+                        <input type="text" class="form-control" placeholder="User ID (1001 - 9999)" name="userID" id="userID" required data-validation-required-message="Please enter your User ID.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>User Name</label>
+                        <input type="text" class="form-control" placeholder="User Name" name="userName" id="userName" required data-validation-required-message="Please enter your User Name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Location</label>
+                        <input type="text" class="form-control" placeholder="Location" name= "userLocation" id="userLocation" required data-validation-required-message="Please enter your Gender.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Password" name= "userPassword" id="userPassword" required data-validation-required-message="Please enter your Password.">
+                        <!-- <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea> -->
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-outline btn-primary btn-lg btn-block">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+</body>
+
+</html>
